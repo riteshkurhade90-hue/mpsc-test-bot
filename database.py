@@ -16,3 +16,14 @@ def init_db():
 
     conn.commit()
     conn.close()
+def add_user(user_id, name):
+    conn = sqlite3.connect(DB_NAME)
+    cur = conn.cursor()
+
+    cur.execute(
+        "INSERT OR REPLACE INTO users(user_id, name) VALUES(?, ?)",
+        (user_id, name)
+    )
+
+    conn.commit()
+    conn.close()
