@@ -1,1 +1,9 @@
-# Config
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
+SHEET_ID = os.getenv("SHEET_ID")
+GOOGLE_CREDENTIALS = os.getenv("GOOGLE_CREDENTIALS")
+
+TOTAL_QUESTIONS = 15
+QUIZ_DURATION = 120
