@@ -1,7 +1,6 @@
-BOT_TOKEN = "8917209983:AAEpoQChpJvVc3mmjdyhqrBCnuoFpMYngWM"
+import os
 
-CHANNEL_ID = -1004443970515
-
-SPREADSHEET_ID = "1WeX-QtKF8ccbUWSRgErfGCPwhZyz2xCrJ5c2C6OtSwU"
-
-SERVICE_ACCOUNT_FILE = "service_account.json"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
+SHEET_ID = os.getenv("SHEET_ID")
+GOOGLE_CREDS = os.getenv("GOOGLE_CREDS")
